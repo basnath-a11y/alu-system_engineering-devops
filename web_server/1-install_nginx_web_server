@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script installs and configures Nginx web server
+# This script installs and configures Nginx
 apt-get update -y
 apt-get install nginx -y
 echo 'Holberton School' > /var/www/html/index.html
