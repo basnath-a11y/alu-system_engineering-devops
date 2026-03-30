@@ -2,6 +2,6 @@
 # This script installs and configures Nginx web server
 apt-get update -y
 apt-get install nginx -y
-echo 'Holberton School' | tee /var/www/html/index.nginx-debian.html
-echo 'Holberton School' | tee /var/www/html/index.html
-service nginx restart
+rm /var/www/html/index.nginx-debian.html
+echo 'Holberton School' > /var/www/html/index.html
+nginx -s reload
